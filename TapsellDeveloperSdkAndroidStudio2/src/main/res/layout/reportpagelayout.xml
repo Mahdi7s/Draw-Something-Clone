@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="right"
+        android:padding="4dip"
+        android:layout_margin="10dip"
+        android:text="@string/report_message" />
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledSpinner
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="right|clip_vertical"
+        android:gravity="right"
+        android:layout_margin="10dip"/>
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledEditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_margin="10dip"
+        android:background="@drawable/rounded_border"
+        android:padding="4dip"
+        android:hint="@string/report_hint" />
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledButton
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_open_orange"
+        android:text="@string/send" />
+
+</LinearLayout>

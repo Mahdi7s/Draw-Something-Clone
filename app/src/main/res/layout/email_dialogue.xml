@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".EmailDialogue"
+    android:gravity="center"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_medium">
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:id="@+id/title_win"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ذخیره اطلاعات حساب"
+                    android:textSize="@dimen/text_xlarge"
+                    android:textColor="#d0006c"
+                    android:gravity="center"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ایمیل خودت را در کادر زیر وارد کن :"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+
+                <com.chocolate.puzhle2.CustomViews.CEditText
+                    android:id="@+id/email"
+                    android:layout_width="@dimen/letter_size_height"
+                    android:layout_height="@dimen/header_button_height"
+                    android:text=""
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="40"
+                    android:background="@drawable/frame_textbox"
+                    android:gravity="center"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="یک رمز دلخواه هم در کادر زیر وارد کن :"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+
+                <com.chocolate.puzhle2.CustomViews.CEditText
+                    android:id="@+id/password"
+                    android:layout_width="@dimen/letter_size_height"
+                    android:layout_height="@dimen/header_button_height"
+                    android:text=""
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="40"
+                    android:background="@drawable/frame_textbox"
+                    android:gravity="center"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="رمزی که نوشتی را دوباره در اینجا وارد کن :"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+
+                <com.chocolate.puzhle2.CustomViews.CEditText
+                    android:id="@+id/password_repeat"
+                    android:layout_width="@dimen/letter_size_height"
+                    android:layout_height="@dimen/header_button_height"
+                    android:text=""
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="40"
+                    android:background="@drawable/frame_textbox"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:id="@+id/btn_share_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/header_bar_height"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_save_email"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

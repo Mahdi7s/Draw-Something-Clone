@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/list_item_bg"
+        android:padding="@dimen/margin_large"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/not_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/list_item_bg"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingLeft="@dimen/margin_large"
+        >
+
+        <ImageView
+            android:id="@+id/rank_profile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_info"/>
+
+        <LinearLayout
+            android:id="@+id/frame_mpuzzles_bg"
+            android:weightSum="4.8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frame_mypuzzles_height"
+            android:background="@drawable/frame_my_puzzles"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_small">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/like_icon"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:id="@+id/txtLikedPuzzles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/solve_icon"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:id="@+id/txtRankSolved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/create_icon"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:id="@+id/txtRankCreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ranking_league_icon"
+                    android:layout_width="@dimen/large_brush"
+                    android:layout_height="@dimen/large_brush"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/league6"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:id="@+id/txtRankScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="175000"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight=".8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small">
+
+                    <com.chocolate.puzhle2.CustomViews.CTextView
+                        android:id="@+id/txtRankId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text=" .1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_medium"/>
+
+                    <com.chocolate.puzhle2.CustomViews.CTextView
+                        android:id="@+id/txtRankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/txtRankId"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:text="عباس آقا"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_medium"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/achivement_footer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/list_item_bottom_bg" />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('adad-client-3.1.jar'))

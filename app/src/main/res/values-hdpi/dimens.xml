@@ -1,0 +1,98 @@
+<resources>
+    <dimen name="answer_box">22dp</dimen>
+    <dimen name="suggestion_box">32dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="small_brush">10dp</dimen>
+    <integer name="small_size">10</integer>
+    <dimen name="medium_brush">20dp</dimen>
+    <integer name="medium_size">20</integer>
+    <dimen name="large_brush">30dp</dimen>
+    <integer name="large_size">30</integer>
+	
+    <dimen name="brush_size1">3dp</dimen>
+	<dimen name="brush_size2">6dp</dimen>
+	<dimen name="brush_size3">12dp</dimen>
+	<dimen name="brush_size4">24dp</dimen>
+
+    <dimen name="header_bar_height">49dp</dimen>
+    <dimen name="header_button_width">129dp</dimen>
+    <dimen name="header_button_lamp_width">108dp</dimen>
+    <dimen name="header_button_height">46dp</dimen>
+    <dimen name="header_league_bg">43dp</dimen>
+    <dimen name="header_league_height">39dp</dimen>
+    <dimen name="main_btns_width">82dp</dimen>
+    <dimen name="main_btns_height">96dp</dimen>
+
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="text_stats_Size">15sp</dimen>
+    <dimen name="text_winner_Size">20sp</dimen>
+    <dimen name="text_scoreboard_Size">30sp</dimen>
+    <dimen name="text_small">11sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+    <dimen name="text_free">15sp</dimen>
+    <dimen name="text_win">14sp</dimen>
+
+    <dimen name="solve_letter_size">14sp</dimen>
+    <dimen name="suggestion_letter_size">19sp</dimen>
+    <dimen name="header_font_size">18sp</dimen>
+
+    <dimen name="letter_size_up_width">300dp</dimen>
+    <dimen name="letter_size_up_height">77dp</dimen>
+    <dimen name="letter_size_dw_width">300dp</dimen>
+    <dimen name="letter_size_dw_height">112dp</dimen>
+    <dimen name="letter_size_height">224dp</dimen>
+	<dimen name="lamp_width">56dp</dimen>
+	<dimen name="lamp_height">96dp</dimen>
+
+    <dimen name="frame_mypuzzles_width">310dp</dimen>
+    <dimen name="frame_mypuzzles_height">100dp</dimen>
+    <dimen name="frame_likes_width">80dp</dimen>
+    <dimen name="frame_likes_height">30dp</dimen>
+    <dimen name="frame_solves_width">104dp</dimen>
+    <dimen name="frame_solves_height">30dp</dimen>
+    <dimen name="puzzle_thumbnail_width">40dp</dimen>
+    <dimen name="puzzle_thumbnail_height">70dp</dimen>
+    <dimen name="btn_send_gallery_width">113dp</dimen>
+    <dimen name="btn_send_gallery_height">35dp</dimen>
+    <dimen name="stars_width">22dp</dimen>
+    <dimen name="stars_empty_width">18dp</dimen>
+    <dimen name="frame_stats_margin">5dp</dimen>
+
+    <dimen name="winboard_frames_margin">10dp</dimen>
+    <dimen name="winboard_frame_puzzle_width">142dp</dimen>
+    <dimen name="winboard_frame_puzzle_height">142dp</dimen>
+    <dimen name="winboard_puzzle_thumbnail_width">131dp</dimen>
+    <dimen name="winboard_puzzle_thumbnail_height">131dp</dimen>
+    <dimen name="winboard_frame_designer_width">142dp</dimen>
+    <dimen name="winboard_frame_designer_height">187dp</dimen>
+    <dimen name="winboard_frame_likes_width">142dp</dimen>
+    <dimen name="winboard_frame_likes_height">46dp</dimen>
+    <dimen name="winboard_league_width">56dp</dimen>
+    <dimen name="winboard_league_small_width">38dp</dimen>
+    <dimen name="winboard_frame_solvers_width">292dp</dimen>
+    <dimen name="winboard_frame_solvers_height">227dp</dimen>
+    <dimen name="winboard_row_width">273dp</dimen>
+    <dimen name="winboard_row_height">38dp</dimen>
+    <dimen name="winboard_button_width">188dp</dimen>
+
+    <dimen name="create_bottom_frame_height">40dp</dimen>
+    <dimen name="create_top_frame_height">60dp</dimen>
+    <dimen name="create_puzzle_name_height">25dp</dimen>
+    <dimen name="create_margin_right">14dp</dimen>
+    <dimen name="create_button_refresh_height">32dp</dimen>
+
+    <dimen name="solvetype_puzzle_frame_width">180dp</dimen>
+    <dimen name="solvetype_puzzle_frame_height">250dp</dimen>
+    <dimen name="solvetype_btn_height">60dp</dimen>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+
+</resources>

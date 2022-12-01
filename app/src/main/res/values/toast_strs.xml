@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_not_any_app_share">برنامه ای برای به اشتراک گذاری یافت نشد...</string>
+
+    <string name="toast_only_three_words">جواب پازل نمی تواند بیش از ۳ کلمه باشد...</string>
+
+    <string name="toast_only_farsi_letters">فقط حروف فارسی پذیرفته می شوند...</string>
+
+    <string name="toast_two_letter_word">هر کلمه می بایست حداقل دو حرف داشته باشد...</string>
+
+    <string name="toast_puzzle_not_supported">پازل انتخاب شده پشتیبانی نمیشود</string>
+
+    <string name="toast_err_while_img_load">خطا در دریافت عکس</string>
+
+    <string name="toast_cant_solve_yourself">شما قادر به حل پازل ساخته خود نیستید</string>
+
+    <string name="toast_puzzle_life_end">عمر این پازل به پایان رسیده :(</string>
+
+    <string name="toast_puzzle_solve_no_achieve">توجه! از حل این پازل امتیازی کسب نخواهید کرد</string>
+
+    <string name="toast_puzzle_solved_before">توجه! از حل این پازل امتیازی کسب نخواهید کرد</string>
+
+    <string name="toast_successful_login">اتصال به حساب گوگل با موفقیت انجام شد</string>
+
+</resources>

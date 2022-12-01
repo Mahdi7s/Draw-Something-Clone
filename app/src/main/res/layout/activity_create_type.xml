@@ -1,0 +1,369 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:context=".CreateTypeActivity"
+        android:layoutDirection="ltr">
+
+        <include layout="@layout/main_header_layout"/>
+
+        <LinearLayout
+            android:layout_weight=".9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/create_type_header"/>
+
+                    <ImageButton
+                        android:onClick="onClick"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btn_refresh_words"
+                        android:layout_width="@dimen/header_button_lamp_width"
+                        android:layout_height="@dimen/create_button_refresh_height"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/btn_refresh_words"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginRight="@dimen/create_margin_right">
+                        <requestFocus/>
+                    </ImageButton>
+
+                    <ImageButton
+                        android:onClick="onClick"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/btn_check_public"
+                        android:layout_width="@dimen/header_button_lamp_width"
+                        android:layout_height="@dimen/create_button_refresh_height"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/btn_check_public"
+                        android:tag="unchecked"
+                        android:layout_marginLeft="@dimen/create_margin_right"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/create_type_header_after" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/create_type_background"
+                    android:weightSum="1.5"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingRight="@dimen/margin_small">
+
+                    <RelativeLayout
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:onClick="onClick"
+                            android:id="@+id/btn_create_easy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btn_easy_coin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_create_easy_public"/>
+
+                        </LinearLayout>
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:clickable="false"
+                            android:id="@+id/text_easy"
+                            android:textSize="@dimen/text_large"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:onClick="onClick"
+                            android:id="@+id/btn_create_normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btn_normal_coin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_create_normal_public"/>
+
+                        </LinearLayout>
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:id="@+id/text_normal"
+                            android:textSize="@dimen/text_large"
+                            android:textColor="@android:color/black"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="false"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:onClick="onClick"
+                            android:id="@+id/btn_create_hard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btn_hard_coin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_create_hard_public"/>
+
+                        </LinearLayout>
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:id="@+id/text_hard"
+                            android:clickable="false"
+                            android:textSize="@dimen/text_large"
+                            android:textColor="@android:color/black"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seperator_create"
+                android:background="@drawable/seperator_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/create_free_background"
+                    android:weightSum="1.38"
+                    android:paddingBottom="@dimen/margin_medium">
+
+                    <ImageView
+                        android:onClick="onClick"
+                        android:id="@+id/imgClickRefreshDesc"
+                        android:layout_weight=".30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/text_refresh_twice"
+                        android:layout_gravity="center"/>
+
+                    <RelativeLayout
+                        android:layout_weight=".37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/frame_free_text"/>
+
+                        <com.chocolate.puzhle2.CustomViews.CEditText
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/free_word"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_medium"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textNoSuggestions"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:digits=" آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهی"
+                            android:hint="کلمه دلخواه را وارد کنید"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight=".4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/text_error"
+                            android:textSize="@dimen/text_medium"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="کلمات توهین آمیز موجب مسدودی حساب میگردد!"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight=".3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/margin_medium">
+
+                        <LinearLayout
+                            android:onClick="onClick"
+                            android:id="@+id/btn_create_free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium">
+
+                            <ImageView
+                                android:id="@+id/btn_free_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_create_free_coin2"/>
+
+                            <ImageView
+                                android:id="@+id/btn_free_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_create_free" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/help_create_1"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

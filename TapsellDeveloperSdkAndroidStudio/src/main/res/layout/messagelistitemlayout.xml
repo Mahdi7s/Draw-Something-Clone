@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:id="@+id/messagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dip"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@drawable/arrow_down"
+        android:drawablePadding="4dip"
+        android:gravity="right|center_vertical"
+        android:padding="8dip"
+        android:minHeight="64dip"
+        android:text="@string/error" />
+
+</LinearLayout>

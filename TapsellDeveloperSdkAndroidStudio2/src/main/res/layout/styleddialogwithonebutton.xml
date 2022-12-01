@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:id="@+id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:focusableInTouchMode="false"
+        android:singleLine="true"
+        android:text="@string/new_messages_title"
+        android:textColor="@color/tapsell_dialog_name"
+        android:textSize="12.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/tapsell_divider_blue" />
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:id="@+id/txt_reader_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:focusableInTouchMode="false"
+        android:padding="10.0dip"
+        android:text="@string/new_messages_body"
+        android:textColor="@color/tapsell_description"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/tapsell_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center">
+
+        <ir.tapsell.tapselldevelopersdk.styledview.StyledButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:minHeight="@dimen/action_bar_height"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

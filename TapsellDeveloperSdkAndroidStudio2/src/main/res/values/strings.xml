@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TapsellDeveloperSdk</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="noItem">فعلا موردی موجود نیست به زودی اضافه خواهد شد. لطفا بعدا مراجعه کنید</string>
+    <string name="goto_products">رفتن به کالاها</string>
+    <string name="send">ارسال</string>
+    <string name="doit">انجامش میدم!</string>
+    <string name="others">سایر</string>
+    <string name="new_messages_title">پیغام جدید</string>
+    <string name="new_messages_body">شما چند پیغام جدید دارید.</string>
+    <string name="loading_web_view">در حال لود صفحه وب، کمی صبر کنید</string>
+    <string name="btn_ok">حله</string>
+    <string name="btn_cancel">بیخیال</string>
+    <string name="got_coins"> شیتیل دریافت کردید</string>
+    <string name="text_num_coin">با انجام این کار شما این تعداد شیتیل بدست می آورید.</string>
+    <string name="your_messages">پیغامهای شما</string>
+    <string name="tapcoin">تپ سکه</string>
+    <string name="sent_from">از طرف</string>
+    <string name="reported_titel">گزارش شد</string>
+    <string name="reported_text">اطلاعات شما گزارش شد. برای دیدن جواب ما پس از چند ساعت به باز هم به تپ سل سر بزنید</string>
+    <string name="loading_title">کمی صبر کنید</string>
+    <string name="loading_mes">در حال برقراری ارتباط</string>
+    <string name="messages">پیام ها</string>
+    <string name="ok">باشه</string>
+    <string name="purchased">خرید انجام شد</string>
+    <string name="market_title">خرید کن :)</string>
+    <string name="newmessagestitle">پیام جدید</string>
+    <string name="newmessagesbody">پیام جدید داری، میبینیش؟</string>
+    <string name="newmessagesview">میبینم</string>
+    <string name="ctalist_title">شیتیل جمع کن!</string>
+    <string name="get_data_failed_title">مشکل در دریافت اطلاعات</string>
+    <string name="get_data_failed_body">دریافت اطلاعات با مشکل مواجه شد، شاید مشکل از اینترنت باشد</string>
+    <string name="check_internet">بررسی اینترنت</string>
+    <string name="tapcoindialogtitle">شیتیل شما</string>
+    <string name="could_not_purchase_title">عدم امکان خرید</string>
+    <string name="could_not_purchase_message">شما کالای مورد نظر را قبلا خریداری کرده اید</string>
+    <string name="tapcoin_firsttime_help_title">تپ سل چطور کار میکنه؟</string>
+    <string name="tapcoin_firsttime_help"> در بخش «پیشنهادات» با انجام کارهای خواسته شده, «شیتیل» به دست می آورید و این شیتیلها رو  میتونین در بخش «کالاها» خرج کنین.</string>
+    <string name="tapcoindialogbody_1">شما کلا</string>
+    <string name="tapcoindialogbody_2">تا شیتیل دارید</string>
+    <string name="purchase_title">خرید کالا</string>
+    <string name="purchase_body">آیا برای خرید این کالا مطمئنید؟ قیمت: </string>
+    <string name="purchase_no_enough_money1">برای خرید این کالا باید</string>
+    <string name="purchase_no_enough_money2"> شیتیل دیگر داشته باشید. یه سری تبلیغ ببینید و شیتیل جمع کنید ;)</string>
+    <string name="get_award_title">گرفتن جایزه با کد</string>
+    <string name="get_award_body">اگر کد جایزه معتبری دارید در این قسمت وارد کنید و دریافت جایزه را بزنید تا شیتیل جایزه را بگیرید.</string>
+    <string name="exit">خروج</string>
+    <string name="yes">بله</string>
+    <string name="get_award">دریافت جایزه</string>
+    <string name="install_app">[نصب اپلیکیشن]</string>
+    <string name="watch_video">[مشاهده ویدیو]</string>
+    <string name="cancel">بیخیال</string>
+    <string name="report_missing">گزارش اشکال</string>
+    <string name="contact_us">ارتباط با ما</string>
+    <string name="invalid_code">کد جایزه معتبر نبود</string>
+    <string name="awarded">تپ سکه جایزه گرفتید</string>
+    <string name="selectdonecta">پیشنهادی که انجام دادید و جایزه اش را نگرفتید انتخاب کنید</string>
+    <string name="error">خطا</string>
+    <string name="report_hint">پیام دلخواه</string>
+    <string name="report_message">برای ارتباط با توسعه دهنده و ارسال انتقادات و پیشنهادات از کادر زیر استفاده نمایید.</string>
+    
+    <string name="ignore_reward_title">انصراف از دریافت جایزه</string>
+    <string name="ignore_reward_content">اگر قبل از اتمام ویدیو از صفحه خارج شوید جایزه ای دریافت نمی کنید. از خروج مطمئن هستید؟</string>
+    <string name="ignore_reward_ok">خروج</string>
+    <string name="ignore_reward_cancel">ادامه نمایش ویدیو</string>
+
+    <!-- showcase -->
+    <string name="sc_offers">اینجا یه سری کار رایگان میکنی و شیتیل جایزه میگیری</string>
+    <string name="sc_tapcoin_count">تعداد شیتیل شما (سکه های تپ‌سل)</string>
+    <string name="sc_offer_item">با انجام یکی از این کارها، شیتیل جایزه میگیری!</string>
+    <string name="sc_products_1">این هم یه سری کالا برای همین برنامه </string>
+    <string name="sc_products_2">هست که می‌تونی با جمع کردن شیتیل‌ها اون‌ها رو بخری.</string>
+    <string name="sc_product_item">شیتیل‌هات خرج میشن و کالا می‌گیری.</string>
+    <string name="sc_product_item_name">نام کالای این برنامه</string>
+    <string name="sc_product_item_price">تعداد شیتیل‌های لازم برای خرید این کالا</string>
+    <string name="next_tutorial">بعدی</string>
+
+    <string name="cannot_be_shown">امکان نمایش راهنما وجود ندارد</string>
+    <!-- showcase finished! -->
+
+</resources>

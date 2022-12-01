@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="button_margin">12dp</dimen>
+    <dimen name="text_padding">24dp</dimen>
+    <dimen name="action_bar_offset">66dp</dimen>
+    <dimen name="showcase_radius">48dp</dimen>
+    <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_outer">128dp</dimen>
+
+</resources>

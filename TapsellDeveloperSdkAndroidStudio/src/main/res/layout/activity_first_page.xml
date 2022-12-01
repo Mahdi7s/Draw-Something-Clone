@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tapsell_dialog_header"
+    android:orientation="vertical" >
+
+    <ir.tapsell.tapselldevelopersdk.ui.tab.PagerSlidingTabStrip
+        android:id="@+id/tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="right" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="80" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/tapsell_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:weightSum="100" >
+
+        <ImageButton
+            android:id="@+id/showtapcoin"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/tapsell_coin"
+            android:text="@string/action_settings"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/tapsell_divider" />
+
+        <ImageButton
+            android:id="@+id/gift"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+			android:maxHeight="20dip"
+            android:src="@drawable/gift"
+            android:text="@string/cancel"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/tapsell_divider" />
+
+        <ImageButton
+            android:id="@+id/contactus"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+			android:maxHeight="20dip"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_offerwall"
+            android:text="@string/cancel"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/tapsell_divider" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:padding="12dip"
+			android:maxHeight="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh"
+            android:text="@string/cancel"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/tapsell_divider" />
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+			android:maxHeight="20dip"
+            android:layout_weight="20"
+            android:background="@drawable/tapsell_white_button_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/report_doing"
+            android:text="@string/cancel"
+            android:textColor="@color/white_button_text_color_selector"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

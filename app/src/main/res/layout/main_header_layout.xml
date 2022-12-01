@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_bar_height"
+        android:background="@drawable/main_header"
+        android:gravity="center_vertical">
+
+        <com.chocolate.puzhle2.CustomViews.CoinsButton
+            android:id="@+id/button_coin"
+            android:layout_width="@dimen/header_button_width"
+            android:layout_height="@dimen/header_button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_small">
+        </com.chocolate.puzhle2.CustomViews.CoinsButton>
+
+        <com.chocolate.puzhle2.CustomViews.LampsButton
+            android:layout_width="@dimen/header_button_lamp_width"
+            android:layout_height="@dimen/header_button_height"
+            android:layout_toRightOf="@id/button_coin"
+            android:layout_marginLeft="@dimen/margin_medium">
+        </com.chocolate.puzhle2.CustomViews.LampsButton>
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_width="@dimen/header_league_bg"
+            android:layout_height="@dimen/header_league_bg"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/league_header_bg">
+
+        <com.chocolate.puzhle2.CustomViews.HeaderLeagueButton
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/header_league_height"
+            android:layout_height="@dimen/header_league_height"
+            android:src="@drawable/league1">
+
+        </com.chocolate.puzhle2.CustomViews.HeaderLeagueButton>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

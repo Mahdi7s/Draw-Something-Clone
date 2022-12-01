@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".ItemsStoreActivity"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/main_header_layout" />
+
+    <ScrollView
+        android:id="@+id/items_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/store_items_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_lamp10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/btn_store_lamp10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_lamp10"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_lamp20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_lamp20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_lamp20"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_lamp50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_lamp50"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_lamp50"></ImageButton>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_large"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg">
+
+                        <ImageView
+                            android:id="@+id/items_seperator_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/store_seperator" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_color1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_color1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_colors1"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_color2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_color2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_colors2"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_color3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_color3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_colors3"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_color4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_color4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_colors4"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_picture"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_type"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_undo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_undo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_store_undo"></ImageButton>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/itemstoreFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_item_bottom_bg" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

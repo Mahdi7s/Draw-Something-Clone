@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_create_type">CreateTypeActivity</string>
+
+    <string name="bazaar_public_key">MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwDIMmdVP/8Opl9q2IYj05ovCWBdfgAL9DqQLb7X6ZxaVM5ZMN7iKce8rn2BVpdMMKwTf5y6YZSyEiBaTQqr79WpBNGo9m8pC8xEjQWG6oQ2z2EtWtTPxu6tboaCVoKqVHu6eB92CQX/BulqEny2JsKwIRPmXaDINKw3bZXfnx4BQBDDMTiK+iIG7xRXd6Rz4BsaAWpFLINDnT+i6f0uXuBYRmxOUQSJ7hvDIfdXX1sCAwEAAQ==</string>
+
+    <string name="myket_public_key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDb0dpoKynuXKIJWS8xy3SWHfgO8zltGAea0/AUoPxHI5+x0YbcHY6q4dkYDua14HzGNIGhptYCmi3zzSxjEUuYln+m0LxpMlJTtZKWWnAer1fQp3Raq5YWTUVfMtHGI6DkhAdEVSrjKKBHX5FG0IYchSa1ml+G2U1W2lc7tknH7wIDAQAB</string>
+
+    <string name="irapps_public_key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSW5g2qDCcQIKq9rDLb/E8asInPstV/D800xsVC7mBxmjaMdGquaoYNX6aFVJXARjOb6Idoi2KcNmZOt8YbuNZS8CE78Q3TyyujACqXEuJiSeBcAiXrLS9EgXo98ylu+znTROsVOEKF/rTWCOevqsvjQ1IrDWOCtqtsddjiiUCwwIDAQAB</string>
+
+    <string name="cando_public_key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCC3hfXAyBj1bnrlNilrtdW4U1qkI8FP27usDKinH9w/XQddtbyn/yY+Qpgi9rZqGEiy8g7jqZr6YZAM3hJCB4V6dvZPwdHmF2AgtbQJQGYbk4lfhfzQl+UGUtsRJtiaPoJZ7ZTYFlqlAz0tRR83w5y0NdkHyqnaJYyOBvI9jgmXwIDAQAB</string>
+
+    <!-- Sandbad -->
+    <string name="market">---</string>
+
+    <string name="facebook_app_id">587157744749464</string>
+
+    <string name="parse_app_id">eeHlybxAQT1qA90RhUpxmuodb9pSSoDanwRF9SSA</string>
+    <string name="parse_client_key">43zYlAQ5MNuD2CeVVzUPkMvW4J3PCDvjODPFz3u4</string>
+    <string name="parse_rest_key">vwmWdiIdvtcsC78p40avTpH5MgGjyKrmYMjBFPeC</string>
+
+    <string name="twitter_consumer_key"></string>
+    <string name="twitter_consumer_secret"></string>
+
+    <string name="app_name">*پاژل*</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Cropper -->
+    <string name="title">Cropper</string>
+    <string name="fixedAspectRatio">fixedAspectRatio =</string>
+    <string name="aspectRatioX">\u002010</string>
+    <string name="aspectRatioXHeader">aspectRatioX =</string>
+    <string name="aspectRatioY">\u002010</string>
+    <string name="aspectRatioYHeader">aspectRatioY =</string>
+    <string name="showGuidelines">showGuidelines = </string>
+    <string name="crop">Crop</string>
+    <string name="rotate">Rotate</string>
+    <string name="croppedImageDesc">The cropped image.</string>
+
+    <!-- Toasts -->
+    <string name="facebookLinked">facebook user linked successfuly.</string>
+    <string name="twitterLinked">facebook user linked successfuly.</string>
+
+    <string-array name="fontSizes">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="showGuidelinesArray">
+        <item>Off</item>
+        <item>On Touch</item>
+        <item>On</item>
+    </string-array>
+    <string name="title_activity_intent_selection">IntentSelection</string>
+    <string name="title_activity_solve_type">SolveType</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_coin_store">CoinStoreActivity</string>
+    <string name="title_activity_items_store">ItemsStoreActivity</string>
+
+    <item name="size_icon" type="id" />
+    <item name="size_icon_glow" type="id" />
+    <item name="size_icon_sel" type="id" />
+    <item name="size_icon_size" type="id" />
+    <string name="title_activity_score_board">ScoreBoardActivity</string>
+    <string name="title_activity_ranking">RankingActivity</string>
+    <string name="title_activity_win">WinActivity</string>
+    <string name="title_activity_my_puzzles">MyPuzzlesActivity</string>
+    <string name="title_activity_achievements">AchievementsActivity</string>
+
+</resources>

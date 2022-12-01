@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/create_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical"
+    tools:context=".CreatePuzzleActivity"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layoutDirection="ltr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_brush"
+            android:background="@drawable/puzzle_name_panel"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.chocolate.puzhle2.CustomViews.CTextView
+                android:textSize="@dimen/text_free"
+                android:id="@+id/puzzle_name_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="الان در حال طراحی «پازل» هستی"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_top_frame_height"
+            android:background="@drawable/toolbar_panel"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/clear_canvas_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_clean" />
+
+            <ImageButton
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_share_puzzle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/drawlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.chocolate.puzhle2.DrawingView
+                android:id="@+id/drawing"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="3dp"
+                android:saveEnabled="true"
+                android:background="#FFFFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/direction_overlay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layoutDirection="ltr"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_left_up"
+                    android:tag="0,0" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_up"
+                    android:tag="0.5,0" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_right_up"
+                    android:tag="1,0" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_right"
+                    android:tag="1,0.5" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_right_down"
+                    android:tag="1,1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_bottom"
+                    android:tag="0.5,1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_left_down"
+                    android:tag="0,1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_left"
+                    android:tag="0,0.5" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onInsertDirectionClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insert_center"
+                    android:tag="0.5,0.5" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_bottom_frame_height"
+            android:background="@drawable/toolbar_panel"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_store_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/start_new"
+                android:onClick="onUndoClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_undo" />
+
+            <ImageButton
+                android:id="@+id/new_redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/start_new"
+                android:onClick="onRedoClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_redo" />
+
+            <ImageButton
+                android:id="@+id/import_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_picture" />
+
+            <ImageButton
+                android:id="@+id/text_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_text" />
+
+            <ImageButton
+                android:id="@+id/color_pallete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/start_new"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_pallete" />
+
+            <ImageButton
+                android:id="@+id/erase_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/erase"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_eraser" />
+
+            <ImageButton
+                android:id="@+id/draw_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/brush"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_brush" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.chocolate.puzhle2.CustomViews.BrushSizeSelector
+        android:id="@+id/pen_size_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.chocolate.puzhle2.CustomViews.BrushSizeSelector>
+
+    <com.chocolate.puzhle2.CustomViews.BrushSizeSelector
+        android:id="@+id/eraser_size_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.chocolate.puzhle2.CustomViews.BrushSizeSelector>
+
+    <com.chocolate.puzhle2.CustomViews.ColorPallets
+        android:id="@+id/pallets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"></com.chocolate.puzhle2.CustomViews.ColorPallets>
+
+    <ImageView
+        android:id="@+id/good_puzzle_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:onClick="onClick"
+        android:scaleType="centerInside"
+        android:src="@drawable/good_bad_puzzle"
+        android:visibility="gone" />
+
+</RelativeLayout>

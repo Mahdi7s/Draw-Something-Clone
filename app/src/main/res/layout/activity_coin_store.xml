@@ -1,0 +1,559 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".CoinStoreActivity"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/main_header_layout" />
+
+    <ScrollView
+        android:id="@+id/coin_store_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/store_coins_header" />
+
+            <!--without off price-->
+
+            <LinearLayout
+                android:id="@+id/layout_normal_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:id="@+id/mainFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_gift2_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_gift2_introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins_friends"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_daily_coin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large">
+
+                        <ImageButton
+                            android:layout_centerInParent="true"
+                            android:id="@+id/btn_store_daily_coin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_daily_coins"></ImageButton>
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:gravity="bottom"
+                            android:id="@+id/daily_coin_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_xlarge"
+                            android:text="08:22:44"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_large"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/margin_medium"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/coin_store_sperator"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/seperator_bg">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/header_bar_height"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/store_coins_seperator"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_marginBottom="@dimen/margin_small"/>
+
+                        <!--<com.chocolate.puzhle.CustomViews.CTextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_xlarge"
+                            android:text="درصدی از درآمد این بازی صرف امور خیریه میگردد"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_small"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/margin_medium"/>-->
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_coins3000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_coins3000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins3000_off"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_coins450"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_coins450"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins450"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_coins1200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_coins1200"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins1200"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_coins9000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_coins9000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins9000"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_coins20000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_coins20000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins20000"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_store_premium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_store_premium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_remove_ads"></ImageButton>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/storeCoinFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:onClick="onClick"
+                    android:src="@drawable/list_item_bottom_bg" />
+
+            </LinearLayout>
+
+            <!--with off price-->
+
+            <LinearLayout
+                android:id="@+id/layout_off_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:id="@+id/mainFrameoff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_gift2_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_gift2_introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins_friends"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_daily_coin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large">
+
+                        <ImageButton
+                            android:layout_centerInParent="true"
+                            android:id="@+id/btn_storeoff_daily_coin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_daily_coins"></ImageButton>
+
+                        <com.chocolate.puzhle2.CustomViews.CTextView
+                            android:gravity="bottom"
+                            android:id="@+id/off_daily_coin_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_xlarge"
+                            android:text="08:22:44"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_large"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/margin_medium"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/coin_storeoff_sperator"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/seperator_bg">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/header_bar_height"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/store_coins_seperator"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_marginBottom="@dimen/margin_small"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_coins20000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_coins20000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins20000_off"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_coins9000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_coins9000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins9000_off"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_coins3000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_coins3000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins3000"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_coins450"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_coins450"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins450"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_coins1200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_coins1200"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_store_coins1200"></ImageButton>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame_storeoff_premium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_bg"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_large"
+                        android:paddingLeft="@dimen/margin_large"
+                        android:paddingTop="@dimen/margin_small">
+
+                        <ImageButton
+                            android:id="@+id/btn_storeoff_premium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_remove_ads"></ImageButton>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/storeoffCoinFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_item_bottom_bg" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="com.chocolate.puzhle2">
+
+    <!--<uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />-->
+    <uses-permission android:name="ir.mservices.market.BILLING" />
+    <!--<uses-permission android:name="ir.tgbs.iranapps.permission.BILLING"/>-->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <!--<uses-permission android:name="android.permission.USE_CREDENTIALS" />-->
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- for adad & tapsell -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="com.chocolate.puzhle2.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.chocolate.puzhle2.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.chocolate.puzhle2.Application"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Launcher">
+
+        <activity
+            android:name="com.chocolate.puzhle2.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- filter for sending text; accepts SENDTO action with sms URI schemes -->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SENDTO" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+
+                <!--<data android:scheme="sms" />-->
+                <!--<data android:scheme="smsto" />-->
+            <!--</intent-filter>-->
+            <!-- filter for sending text or images; accepts SEND action and text or image data -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <!--<data android:mimeType="text/plain" />-->
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.chocolate.puzhle2.SolvePuzzleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.chocolate.puzhle2.CreatePuzzleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chocolate.puzhle2.GalleryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.SolveType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_solve_type"
+            android:screenOrientation="portrait"></activity>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" /> ***********-->
+
+        <activity
+            android:name="com.chocolate.puzhle2.CoinStoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_coin_store"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.ItemsStoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_items_store"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.ScoreBoardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_score_board"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- ***************** PARSE PUSH ******************* -->
+
+        <receiver
+            android:name="com.chocolate.puzhle2.events.AlarmReceiver"
+            android:process=":remote"></receiver>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name. -->
+                <category android:name="com.chocolate.puzhle2" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.chocolate.puzhle2.events.CPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.chocolate.puzhle2.events.AlarmAutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.parse.push.gcm_sender_id" android:value="id:542211675644" />
+
+        <!-- push ends... -->
+
+        <activity
+            android:name="com.chocolate.puzhle2.RankingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_ranking"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.WinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_win"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.MyPuzzlesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_my_puzzles"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.AchievementsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_achievements"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="ir.adad.client.AdadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name="com.chocolate.puzhle2.CreateTypeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.InformationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.HelpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.chocolate.puzhle2.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+
+        <meta-data
+            android:name="AdadToken"
+            android:value="7a8c62d3edd748b38e6db82265286e15" />
+        <meta-data
+            android:name="AdadBannersEnabledOnStart"
+            android:value="true" />
+        <meta-data
+            android:name="AdadTestMode"
+            android:value="false" />
+        <meta-data
+            android:name="AdadShowRemoveAds"
+            android:value="true" />
+        <meta-data
+            android:name="AdadLogging"
+            android:value="false" />
+        <meta-data
+            android:name="AdadLoggingLevel"
+            android:value="error" />
+
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/icon_notification" />
+
+        <!-- Tapsell -->
+        <activity android:name="ir.tapsell.tapselldevelopersdk.FirstPage" android:screenOrientation="portrait" android:theme="@style/AppTheme" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.CtaDescription" android:screenOrientation="portrait" android:theme="@style/AppTheme" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.MessagesList" android:screenOrientation="portrait" android:theme="@style/AppTheme" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.ReportPage" android:screenOrientation="portrait" android:theme="@style/AppTheme" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.ShowVideoPage" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.WebViewActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name="ir.tapsell.tapselldevelopersdk.DirectAdMiddleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <service android:name="ir.tapsell.tapselldevelopersdk.services.asynchservices.core.HttpService"></service>
+    </application>
+
+</manifest>

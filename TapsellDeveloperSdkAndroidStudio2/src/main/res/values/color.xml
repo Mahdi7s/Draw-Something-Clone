@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_background">#c0000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="contacts_background_color">#BCBCBC</color>
+    <color name="tapsell_clip_list_pressed">#ffe4e4e4</color>
+    <color name="umano_button_text">#ff545454</color>
+    <color name="tapsell_edit_text">#ff282828</color>
+    <color name="tapcoin_changed_background">#FF6666</color>
+    <color name="tapsell_edit_text_disabled">#ff989898</color>
+    <color name="tapsell_edit_hint">#ff989898</color>
+    <color name="tapsell_error_header">#ff282828</color>
+    <color name="tapsell_error_text">#ff5a5a5a</color>
+    <color name="tapsell_dialog_text">#ff5a5a5a</color>
+    <color name="tapsell_light_gray">#fffcfcfc</color>
+    <color name="tapsell_divider">#ffc8c8c8</color>
+    <color name="tapsell_divider_blue">#2D7AFF</color>
+    <color name="tapsell_description">#ff5a5a5a</color>
+    <color name="tapsell_dialog_header">#fff0f0f0</color> 
+    <color name="tapsell_dialog_name">#ff5a5a5a</color> 
+    <color name="tapsell_orange">#ffff9431</color> 
+    <color name="tapsell_gray">#ff999999</color>
+    <color name="tapsell_clip_button_bg_pressed">#a0000000</color> 
+    <color name="tapsell_pen_color">#F7A93B</color> 
+    <color name="tapsell_pen_color2">#d58719</color> 
+    
+    
+    
+    
+
+</resources>

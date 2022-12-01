@@ -1,0 +1,226 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".SolveType"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/main_header_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/solve_header"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:weightSum="7.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/solve_background">
+
+                <LinearLayout
+                    android:layout_weight="3.2"
+                    android:weightSum="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <ImageView
+                        android:onClick="onClick"
+                        android:layout_weight=".5"
+                        android:id="@+id/button_sFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_friends_puzzle"
+                        android:background="@android:color/transparent"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:onClick="onClick"
+                        android:layout_weight=".5"
+                        android:id="@+id/button_sRandom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/btn_random_puzzle_free"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="@dimen/margin_small"/>
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/puzzle_thumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/desc_solve"/>
+
+                            <ImageView
+                                android:id="@+id/btn_report"
+                                android:onClick="onClick"
+                                android:visibility="visible"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="@dimen/margin_xlarge"
+                                android:layout_height="@dimen/margin_xlarge"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"
+                                android:layout_marginBottom="@dimen/margin_large"
+                                android:src="@drawable/btn_report"/>
+
+                            <ImageView
+                                android:id="@+id/btn_profile"
+                                android:onClick="onClick"
+                                android:visibility="visible"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/margin_xlarge"
+                                android:layout_height="@dimen/margin_xlarge"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"
+                                android:layout_marginBottom="@dimen/margin_large"
+                                android:src="@drawable/profile"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/solves_icon"
+                                    android:onClick="onClick"
+                                    android:layout_marginRight="@dimen/brush_size1"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="@dimen/margin_xlarge"
+                                    android:layout_height="@dimen/margin_xlarge"
+                                    android:scaleType="fitCenter"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/solve_icon"
+                                    android:visibility="visible"/>
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:id="@+id/solves_count"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/margin_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textSize="@dimen/text_large"
+                                    android:textColor="#000000"
+                                    android:visibility="visible"/>
+
+                                <ImageView
+                                    android:id="@+id/likes_icon"
+                                    android:onClick="onClick"
+                                    android:layout_marginRight="@dimen/brush_size1"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="@dimen/margin_xlarge"
+                                    android:layout_height="@dimen/margin_xlarge"
+                                    android:scaleType="fitCenter"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/like_icon"
+                                    android:visibility="visible"/>
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:id="@+id/likes_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="5"
+                                    android:textSize="@dimen/text_large"
+                                    android:textColor="#000000"
+                                    android:visibility="visible"/>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_solve"
+                    android:layout_weight="3.2"
+                    android:onClick="onClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    >
+
+                    <ImageView
+                        android:clickable="false"
+                        android:id="@+id/reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_solve_reward1"/>
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/srew1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_solve_puzzle"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

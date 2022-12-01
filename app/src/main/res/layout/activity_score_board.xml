@@ -1,0 +1,654 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context="com.chocolate.puzhle2.ScoreBoardActivity"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/main_header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/scoreboardHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/scoreboard_background_header" />
+
+                    <ImageButton
+                        android:id="@+id/btn_share_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/create_button_refresh_height"
+                        android:layout_alignLeft="@id/scoreboardHeader"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/create_margin_right"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onClick"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_share_small" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile_header_after" />
+
+            </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/list_item_bg">
+
+
+                    <LinearLayout
+                        android:id="@+id/score_share_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/margin_medium"
+                            android:paddingRight="@dimen/margin_medium">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true">
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/player_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+										android:gravity="center"
+                                        android:text="بازیکن"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_large" />
+
+                                    <ImageView
+                                        android:id="@+id/edit_name"
+                                        android:layout_width="@dimen/margin_large"
+                                        android:layout_height="@dimen/margin_large"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginBottom="@dimen/margin_small"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:adjustViewBounds="true"
+                                        android:onClick="onClick"
+                                        android:scaleType="fitStart"
+                                        android:src="@drawable/edit" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="@dimen/brush_size1"
+                                    android:layout_marginTop="@dimen/brush_size1">
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:layout_centerInParent="true"
+                                        android:id="@+id/user_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="abc"
+                                        android:textColor="#666"
+                                        android:textSize="@dimen/text_medium" />
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="شناسه : "
+                                        android:textColor="#666"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/signature_row"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true">
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/player_signature"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+										android:gravity="center"
+                                        android:text="بدون امضا"
+                                        android:textSize="@dimen/text_medium"
+                                        android:textColor="#2b6807" />
+
+                                    <ImageView
+                                        android:id="@+id/edit_signature"
+                                        android:layout_width="@dimen/margin_large"
+                                        android:layout_height="@dimen/margin_large"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitStart"
+                                        android:onClick="onClick"
+                                        android:src="@drawable/edit" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/link_row"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true">
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/player_link"
+                                        android:clickable="true"
+                                        android:onClick="onClick"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+										android:gravity="center"
+                                        android:textSize="@dimen/text_small"
+                                        android:text="بدون لینک"
+                                        android:textColor="#c80050b4" />
+
+                                    <ImageView
+                                        android:id="@+id/edit_link"
+                                        android:onClick="onClick"
+                                        android:layout_width="@dimen/margin_large"
+                                        android:layout_height="@dimen/margin_large"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitStart"
+                                        android:src="@drawable/edit" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/league_progress_bar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_medium"
+                                    android:layout_marginRight="@dimen/margin_medium"
+                                    android:gravity="center"
+                                    android:onClick="onClick">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/margin_large"
+                                        android:layout_marginRight="@dimen/margin_large"
+                                        android:adjustViewBounds="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/progressbar_empty" />
+
+                                    <ImageView
+                                        android:id="@+id/progress_fill"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/margin_large"
+                                        android:layout_marginRight="@dimen/margin_large"
+                                        android:adjustViewBounds="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/progressbar_1" />
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/total_score"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:clickable="false"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_free"
+                                        android:gravity="center"/>
+
+                                </RelativeLayout>
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:id="@+id/league_subject"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/text_large" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/margin_large"
+                            android:paddingTop="@dimen/margin_large"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/store_seperator" />
+
+                        <RelativeLayout
+                            android:id="@+id/goToAchievements0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:layout_marginRight="@dimen/margin_xlarge"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/frame_my_puzzles" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="پازل ساخته شده"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_large" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/margin_xlarge"
+                                        android:adjustViewBounds="true"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/create_icon" />
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/txtCreatedPuzzles"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_xlarge" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/goToAchievements"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/btn_store_lamp10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:layout_marginRight="@dimen/margin_xlarge"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/frame_my_puzzles" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="پازل حل شده"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_large" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/margin_xlarge"
+                                        android:adjustViewBounds="true"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/solve_icon" />
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/txtSolvedPuzzles"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_xlarge" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/goToMyPuzzles1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:layout_marginRight="@dimen/margin_xlarge"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/frame_my_puzzles" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.chocolate.puzhle2.CustomViews.CTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="لایک های دریافتی"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_large" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/margin_xlarge"
+                                        android:adjustViewBounds="true"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/like_icon" />
+
+                                    <com.chocolate.puzhle2.CustomViews.CTextView
+                                        android:id="@+id/txtLikedPuzzles"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_xlarge" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <!--  <RelativeLayout
+                              android:layout_marginLeft="@dimen/margin_xlarge"
+                              android:layout_marginRight="@dimen/margin_xlarge"
+                              android:onClick="onClick"
+                              android:id="@+id/goToMyPuzzles3"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center">
+
+                              <ImageView
+                                  android:layout_marginLeft="@dimen/margin_large"
+                                  android:layout_marginRight="@dimen/margin_large"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:adjustViewBounds="true"
+                                  android:background="@android:color/transparent"
+                                  android:scaleType="fitCenter"
+                                  android:src="@drawable/frame_my_puzzles"/>
+
+                              <LinearLayout
+                                  android:layout_centerInParent="true"
+                                  android:weightSum="1"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:gravity="center">
+
+                                  <puzhleCustomViews.CTextView
+                                      android:layout_weight=".5"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="دو ستاره لایکی"
+                                      android:textColor="@android:color/white"
+                                      android:textSize="@dimen/text_large"/>
+
+                                  <LinearLayout
+                                      android:layout_weight=".5"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:gravity="center"
+                                      android:orientation="horizontal"
+                                      >
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="@dimen/margin_xlarge"
+                                          android:adjustViewBounds="true"
+                                          android:scaleType="fitCenter"
+                                          android:src="@drawable/star_icon"
+                                          android:background="@android:color/transparent"/>
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="@dimen/margin_xlarge"
+                                          android:adjustViewBounds="true"
+                                          android:scaleType="fitCenter"
+                                          android:src="@drawable/star_icon"
+                                          android:background="@android:color/transparent"/>
+
+                                      <puzhleCustomViews.CTextView
+                                          android:layout_gravity="center"
+                                          android:id="@+id/txt2star"
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:text=" x 56"
+                                          android:textColor="@android:color/black"
+                                          android:textSize="@dimen/text_xlarge" />
+
+                                  </LinearLayout>
+
+                              </LinearLayout>
+
+                          </RelativeLayout>
+
+                          <RelativeLayout
+                              android:layout_marginLeft="@dimen/margin_xlarge"
+                              android:layout_marginRight="@dimen/margin_xlarge"
+                              android:onClick="onClick"
+                              android:id="@+id/goToMyPuzzles2"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center">
+
+                              <ImageView
+                                  android:layout_marginLeft="@dimen/margin_large"
+                                  android:layout_marginRight="@dimen/margin_large"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:adjustViewBounds="true"
+                                  android:background="@android:color/transparent"
+                                  android:scaleType="fitCenter"
+                                  android:src="@drawable/frame_my_puzzles"/>
+
+                              <LinearLayout
+                                  android:layout_centerInParent="true"
+                                  android:weightSum="1"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:gravity="center">
+
+                                  <puzhleCustomViews.CTextView
+                                      android:layout_weight=".5"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="سه ستاره لایکی"
+                                      android:textColor="@android:color/white"
+                                      android:textSize="@dimen/text_large"/>
+
+                                  <LinearLayout
+                                      android:layout_weight=".5"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:gravity="center"
+                                      android:orientation="horizontal"
+                                      >
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="@dimen/margin_xlarge"
+                                          android:adjustViewBounds="true"
+                                          android:scaleType="fitCenter"
+                                          android:src="@drawable/star_icon"
+                                          android:background="@android:color/transparent"/>
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="@dimen/margin_xlarge"
+                                          android:adjustViewBounds="true"
+                                          android:scaleType="fitCenter"
+                                          android:src="@drawable/star_icon"
+                                          android:background="@android:color/transparent"/>
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="@dimen/margin_xlarge"
+                                          android:adjustViewBounds="true"
+                                          android:scaleType="fitCenter"
+                                          android:src="@drawable/star_icon"
+                                          android:background="@android:color/transparent"/>
+
+                                      <puzhleCustomViews.CTextView
+                                          android:layout_gravity="center"
+                                          android:id="@+id/txt3star"
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:text=" x 82"
+                                          android:textColor="@android:color/black"
+                                          android:textSize="@dimen/text_xlarge" />
+
+                                  </LinearLayout>
+
+                              </LinearLayout>
+
+                          </RelativeLayout>-->
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/storeCoinFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_item_bottom_bg" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/leagues_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/leagues_desc"
+            android:visibility="gone" />
+
+        <ir.adad.client.Banner
+            android:id="@+id/banner_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

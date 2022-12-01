@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/create_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DailyCoinsActivity"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/letter_size_dw_height">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_xlarge"/>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/coins1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter" />
+
+            <com.chocolate.puzhle2.CustomViews.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/coins2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save"
+                android:scaleType="fitCenter"/>
+
+            <com.chocolate.puzhle2.CustomViews.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/coins3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/save"
+                    android:scaleType="fitCenter"/>
+
+                <com.chocolate.puzhle2.CustomViews.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

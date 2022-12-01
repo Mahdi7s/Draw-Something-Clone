@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **************** alerts *************** -->
+    <string name="server_connecting_wait">لطفا کمی صبر کن...</string>
+    <string name="bazaar_connecting_wait">برنامه در حال ارتباط با بازار هست، لطفا صبر بنما...</string>
+    <string name="myket_connecting_wait">برنامه در حال ارتباط با مایکت هست، لطفا صبر بنما...</string>
+    <string name="cando_connecting_wait">برنامه در حال ارتباط با کندو هست، لطفا صبر بنما...</string>
+    <string name="irapps_connecting_wait">برنامه در حال ارتباط با ایران اپس هست، لطفا صبر بنما...</string>
+    <string name="app_progress_wait">برنامه داره از مخش استفاده میکنه...</string>
+
+    <string name="login_bazaar">تو که هنوز وارد حساب کافه بازار نشدی! برو وارد حسابت شو</string>
+    <string name="login_myket">تو که هنوز وارد حساب  مایکت نشدی! برو وارد حسابت شو</string>
+    <string name="login_cando">تو که هنوز وارد حساب  کندو نشدی! برو وارد حسابت شو</string>
+    <string name="login_irapps">تو که هنوز وارد حساب  ایران اپس نشدی! برو وارد حسابت شو</string>
+    <string name="btn_ok">باشه</string>
+    <string name="btn_no">نمیخوام</string>
+
+    <string name="enable_with_rate">میخوای این آیتم را امتحان کنی؟ کافیه به فروشگاه بری و به ما ستاره بدی تا بتونی سه بار از این آیتم استفاده کنی.</string>
+
+    <string name="enable_undo_title">بینهایت حرکت!</string>
+    <string name="enable_undo_msg">برای بیش از یک حرکت باید آیتمش رو در فروشگاه بخری...</string>
+    <string name="enable_undo_yes">می خوامش</string>
+    <string name="enable_undo_no">نمی خوامش :|</string>
+
+    <string name="enable_picture_title">اضافه کردن عکس</string>
+    <string name="enable_picture_msg">با این آیتم میتونی هر عکسی که خواستی از گالری گوشی وارد پازلت کنی</string>
+    <string name="enable_picture_yes">می خوامش</string>
+    <string name="enable_picture_no">نمی خوامش :|</string>
+
+    <string name="enable_text_title">اضافه کردن متن</string>
+    <string name="enable_text_msg">با این آیتم میتونی هر متنی را که خواستی وارد پازلت کنی</string>
+    <string name="enable_text_yes">می خوامش</string>
+    <string name="enable_text_no">نمی خوامش :|</string>
+
+    <string name="successful_share_title">اشتراک گزاری موفق</string>
+    <string name="successful_share_msg">می تونی واسه اشتراک گذاری مجدد و دیدن لایک ها و حل های پازلی که ساختی به پازل های من بری...</string>
+    <string name="successful_share_yes">خب :)</string>
+
+    <string name="enable_item_title">خرید آیتم</string>
+    <string name="enable_item_msg">به ازای خرید آیتم اسم آیتم مقدار سکه ازت کم میشه.</string>
+    <string name="enable_item_yes">خرید آیتم</string>
+    <string name="enable_item_no">نمیخوام :|</string>
+
+    <string name="love_game_title">کجا رفیق؟!</string>
+    <string name="love_game_msg">بگو ببینم از این بازی خوشت اومد یا نه؟</string>
+    <string name="love_game_yes">آره</string>
+    <string name="love_game_no">نوچ</string>
+
+    <string name="feedback_game_title">ای بابا!</string>
+    <string name="feedback_game_msg">لطفا تو باکس زیر برای ما بنویس چرا از بازی خوشت نیومده تا توی بروزرسانی ها درستش کنیم.</string>
+    <string name="feedback_game_yes">ارسال و خروج</string>
+    <string name="feedback_game_no">نوچ</string>
+
+    <string name="rate_game_title">چه خوب :)</string>
+    <string name="rate_game_msg">حالا که از بازی خوشت اومده با ستاره دادن ما رو در بروزرسانی این بازی دلگرم کن و ۱۰۰ تا هم سکه جایزه بگیر.</string>
+    <string name="rate_game_yes">باشه</string>
+    <string name="rate_game_no">نمی خوام</string>
+
+    <string name="rate_game_checkbox">دیگه نمایش نده اینو</string>
+
+    <string name="solve_pay_title">چقدر پازل میسازی؟؟</string>
+    <string name="solve_pay_msg">اگه میخوای بازم پازل بسازی،یا باید یکی حل کنی یا ۳۰ تا سکه بدی</string>
+    <string name="solve_pay_pay">پرداخت ۳۰ سکه</string>
+    <string name="solve_pay_solve">حل یک پازل</string>
+
+    <string name="create_pay_title">چقدر حل میکنی؟؟</string>
+    <string name="create_pay_msg"> اگه میخوای بازم پازل حل کنی، یا باید یکی بسازی یا ۳۰ تا سکه بدی</string>
+    <string name="create_pay_pay">پرداخت ۳۰ سکه</string>
+    <string name="create_pay_create">ساخت پازل</string>
+
+    <string name="solve_err_own">ای ناقلا! می خوای پازلی که خودت ساختی رو حل کنی؟! نمیشه :)</string>
+    <string name="solve_err_own_ok">اه</string>
+
+    <string name="solve_err_solved">فراموشی داری؟! تو پازلو قبلا حل کردی - برو یکی دیگه پیدا کن...</string>
+    <string name="solve_err_solved_ok">باشه</string>
+
+    <string name="main_act_start">برای شروع کافیه یکی از دکمه های "طراحی پازل" یا "حل پازل" رو انتخاب کنی</string>
+    <string name="main_act_start_title">ساخت یا حل؟!</string>
+
+    <string name="createtype_act_start">یکی از سه کلمه پیشنهادی را انتخاب کن و اون را بصورت پازل طراحی کن تا هوش دوستات رو به چالش بکشی</string>
+    <string name="createtype_act_start_title">کدوم کلمه؟</string>
+
+    <string name="publicshare_act_start">اگه دوست داری به ازای ساخت پازل، سکه و لایک بیشتری بگیری و در مسابقه برگزیده ها شرکت کنی از ارسال عمومی استفاده کن</string>
+    <string name="publicshare_act_start_title">ارسال عمومی نوچ؟!</string>
+
+    <!-- **************** errors *************** -->
+    <string name="error_title">اووپس :(</string>
+    <string name="server_receive_err_text">برنامه نمیتونه به سرور وصل بشه. یه چک کن ببین اینترنت گوشی مشکلی نداشته باشه و دوباره تلاش کن...</string>
+    <string name="btn_try_again">تلاش دوباره</string>
+
+    <string name="server_receive_not_found">هیچی پیدا نشد! یه ذره صبر کن و دوباره تلاش کن</string>
+
+    <string name="server_receive_busy">سرور بازی سرش یکم شلوغه، یه چند دقیقه دیگه بیا !</string>
+
+    <string name="april_intro_title">به پاژل خوش اومدی</string>
+    <string name="april_intro">سلام! من آوریل هستم و قراره بعضی جاها راهنمایی کنم چطوری بازی کنی...</string>
+
+    <string name="display_name_title">انتخاب اسم</string>
+    <string name="display_name_hint">نام نمایشی</string>
+    <string name="display_name_prefill"></string>
+    <string name="display_name_msg">اول یه اسم باحال برای خودت انتخاب کن:</string>
+    <string name="display_name_enter">شروع بازی</string>
+
+
+    <string name="puzzle_answer_title">اشتراک گزاری پازل</string>
+    <string name="puzzle_answer_hint">متن پیام</string>
+    <string name="puzzle_answer_prefill"></string>
+    <string name="puzzle_answer_msg">میتونی یه پیام برای کسانی که پازلت را حل میکنند یادداشت کنی تا بعد از حل ببینن :)</string>
+    <string name="puzzle_answer_enter">اشتراک گزاری</string>
+
+    <string name="leave_drawing_title">بازگشت به منوی اصلی</string>
+    <string name="leave_drawing_msg">هرچی کشیدی پاک میشه ها، مطمئنی!</string>
+    <string name="leave_drawing_no">نه حواسم نبود</string>
+    <string name="leave_drawing_yes">آره مطمئنم</string>
+
+    <string name="connect_gplus_title">ورود با حساب گوگل</string>
+    <string name="connect_gplus_msg">میخوای سکه ها و امتیاز و ... به آخرین وضعیتی که در حساب قبلیت داشتی برگرده؟</string>
+    <string name="signup_gplus_msg">میخوای اطلاعات فعلی حسابت مثل سکه ها و امتیاز و ... را در حساب گوگلت ذخیره کنی؟</string>
+    <string name="connect_gplus_yes">آره</string>
+    <string name="connect_gplus_no">نوچ</string>
+
+    <string name="win_title">بردی رفیق</string>
+    <string name="win_msg">به نظر پازلو حل کردی :) و تازه 5 سکه  جایزه گرفتی و 8 امتیاز گرفتی</string>
+    <string name="win_ok">هورااا</string>
+
+    <string name="not_enough_coin_title">سکه نداری که:(</string>
+    <string name="not_enough_coin_msg">سکه کافی واسه خرید این آیتم نداری!</string>
+    <string name="not_enough_coin_btnget">سکه می خوام</string>
+    <string name="not_enough_coin_btncancel">بیخیال :(</string>
+
+    <string name="not_enough_lamp_title">لامپ نداری که:(</string>
+    <string name="not_enough_lamp_msg">لامپی واسه حذف حروف نداری ...</string>
+    <string name="not_enough_lamp_msg_rate">لامپی واسه حذف حروف نداری! می تونی با معرفی بازی به دوستات 3 تا لامپ مجانی بگیری :)</string>
+    <string name="not_enough_lamp_btnget">لامپ می خوام</string>
+    <string name="not_enough_lamp_btncancel">بیخیال :(</string>
+
+    <string name="win_return_title">بازگشت به صفحه اصلی</string>
+    <string name="win_return_msg">مطمئنی که نمیخوای جای دیگه رکوردت رو به اشتراک بذاری؟</string>
+    <string name="win_return_yes">آره مطمئنم</string>
+
+    <string name="clear_canvas_really">هرچی کشیدی پاک میشه ها، مطمئنی؟</string>
+
+    <string name="server_updating_wait">در حال به روز رسانی گالری... لطفا صبر کنید...</string>
+    <string name="directory_Or_File_Creation_Failed">مشکلی در ایجاد پوشه یا فایل وجود دارد. بررسی کنید حافظه دستگاه شما خالی باشد.</string>
+    <string name="gallery_already_updated">گالری شما به روز است.</string>
+    <string name="bitmap_failed">مشکلی در بروز رسانی گالری به وجود آمده است. لطفا مجددا سعی کنید.</string>
+    <string name="Do_You_Want_To_Update">آیا می‌خواهید گالری خود را به روز رسانی کنید؟</string>
+
+    <string name="refresh_words_text">به ازای دریافت ۳ تا کلمه جدید از سرور ۵ سکه از سکه هات کم میشه...</string>
+    <string name="refresh_puzzle">به ازای دریافت پازل جدید از سرور %d سکه از سکه هات کم میشه...</string>
+    <string name="refresh_words_title">سکه بده!</string>
+
+    <string name="create_intro1_title">درود بر تو!</string>
+    <string name="create_intro1">ببين با استفاده از ابزارهايی كه پايين صفحه هست بايد کلمه انتخاب شده رو طراحی کنی.</string>
+
+
+    <string name="create_intro2_title">داشت يادم ميرفت!</string>
+    <string name="create_intro2">وقتي پازلتو ساختي دكمه «ارسال به دوستان» که اون بالا هست رو بزن تا واسه دوستات بفرستيش :)</string>
+
+    <string name="win_intro_title">آفرین !</string>
+    <string name="win_intro">اگه از پازلی که حل کردی خوشت اومده دکمه لایک (اون بالا سمت چپ) رو بزن تا سازندشو به طراحی پازلهای بهتر تشویق کنی</string>
+
+    <string name="win_intro_title2">به دوستات بگو!</string>
+    <string name="win_intro2">دکمه «به دوستات بگو» که اون پایین هست بزن تا رتبه و بردتت رو به دوستات هم بگی</string>
+
+    <string name="solve_intro_title">یوهو !!!</string>
+    <string name="solve_intro">با حدس کلمه پازل امتیاز و جایزه بگیر، به لیگ های بالاتر برو و هوش خودت رو به دوستات نشون بده...</string>
+
+    <string name="lamp_intro_title">حدسش سخته؟!</string>
+    <string name="lamp_intro">می تونی با لمس کردن اون لامپه که اون پایین هست چندتا از حروف اضافه رو حذف کنی، اینجوری حدسش راحت تر میشه :)</string>
+
+    <string name="text_help_intro_title">درج متن</string>
+    <string name="text_help_intro">حالا روی یه نقطه از صفحه کلیک کن تا نوشته بچسبه به اونجا...</string>
+
+    <string name="picture_help_intro_title">درج عکس</string>
+    <string name="picture_help_intro">حالا روی یه نقطه از صفحه کلیک کن تا عکس بچسبه به اونجا...</string>
+
+    <string name="getlamp_intro_title">می خوای لامپ بخری؟!</string>
+    <string name="getlamp_intro">به نظرم با توجه به سکه هایی که داری بسته ۵۰ تایی لامپ رو بخر، چون ۱۰ تا از لامپ هاش رایگانه</string>
+
+    <string name="report_title">گزارش تخلف</string>
+    <string name="report_text">بنظرت این پازل مشکل داره؟ کافیه به ما گزارش بدی تا به مورد رسیدگی کنیم!</string>
+    <string name="report_yes">اعلام گزارش</string>
+    <string name="report_no">بیخیال</string>
+
+    <string name="report_profile_text">اگه اسم پروفایل، امضا یا لینکش مشکلی داره اعلام گزارشو بزن تا رسیدگی کنیم.</string>
+
+    <string name="complaint_title">اعتراض به پازل</string>
+    <string name="complaint_text">بنظرت پازل و جواب با همدیگه همخونی نداشت؟ میتونی اعتراض خودتو ثبت کنی تا بعد از انجام بررسی لازم، سازنده اون جریمه بشه!</string>
+    <string name="complaint_yes">ثبت اعتراض</string>
+    <string name="complaint_no">بیخیال</string>
+
+    <string name="solve_type_act_title">حل پاژل</string>
+    <string name="solve_type_act_msg">خب الان باید یه پازل انتخاب کنی و حدس بزنی کلمه مورد نظر سازنده اون چی هست.</string>
+
+    <string name="achievements_act_title">نابرده رنج...</string>
+    <string name="achievements_act_msg">افتخارات بیشتری کسب کن تا جایزه بیشتری بگیری</string>
+
+    <string name="btn_friends_title">پازل دوستان</string>
+    <string name="btn_friends_text">پازلایی که دوستات تو تلگرام و واتس اپ برات میفرستن رو با این دکمه حل کن!</string>
+
+    <string name="btn_gplus_intro_title">از سکه، لامپ و دستاوردهات محافظت کن!</string>
+    <string name="btn_gplus_intro_msg">میتونی همه اطلاعات مربوط به حساب کاربری این بازیو در حساب کاربری گوگل خودت ذخیره کنی تا اگه بازی رو پاک کردی بعدا بتونی همه اطلاعاتت رو برگردونی!</string>
+
+    <string name="btn_random_title">پازل تصادفی</string>
+    <string name="btn_random_text">اگر دوستات برات پازلی ارسال نکردن، میتونی پازلهای طراحی شده بقیه بازیکنها را حل کنی! با هر بار زدن دکمه تصادفی، یه پازل جدید میاد...</string>
+
+    <string name="btn_lamp_title">لامپ چیکار میکنه؟</string>
+    <string name="btn_lamp_text">بار اول که لامپ رو بزنی نصف حروف اضافه حذف میشه، بار دوم همه حروف اضافه حذف میشه، و بار سوم جواب نشون داده میشه.</string>
+
+</resources>

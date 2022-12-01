@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cta_disabled_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+            android:id="@+id/cta_disabled_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/noItem"
+            android:visibility="gone" />
+
+        <ir.tapsell.tapselldevelopersdk.styledview.StyledButton
+            android:id="@+id/cta_disabled_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/goto_products"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:id="@+id/noitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/noItem"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dip"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/tapsell_divider"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="horizontal"
+        android:overScrollFooter="@null"
+        android:overScrollHeader="@null" />
+
+</LinearLayout>

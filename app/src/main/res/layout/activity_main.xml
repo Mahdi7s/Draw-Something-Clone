@@ -1,0 +1,472 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context="com.chocolate.puzhle2.MainActivity"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/main_header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="6.1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium">
+
+                <ImageButton
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/puzhle_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_xlarge"
+                android:paddingBottom="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge">
+
+                <RelativeLayout
+                    android:background="@drawable/main_buttons_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_solve"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:onClick="onClick"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_solve" />
+
+                    <ImageView
+                        android:id="@+id/notificationSolve"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_alignRight="@id/button_solve"
+                        android:layout_alignTop="@id/button_solve"
+                        android:layout_width="@dimen/large_brush"
+                        android:layout_height="@dimen/large_brush"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/notification3"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@drawable/main_buttons_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:onClick="onClick"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_create" />
+
+                    <ImageView
+                        android:id="@+id/notificationCreate"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_alignRight="@id/button_create"
+                        android:layout_alignTop="@+id/button_create"
+                        android:layout_width="@dimen/large_brush"
+                        android:layout_height="@dimen/large_brush"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/notification3"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/button_store"
+                        android:layout_width="@dimen/main_btns_width"
+                        android:layout_height="@dimen/main_btns_height"
+                        android:adjustViewBounds="true"
+                        android:onClick="onClick"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_store"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge">
+
+                <ImageButton
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:id="@+id/button_mypuzzle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_mypuzzles" />
+
+
+                <ImageButton
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:id="@+id/button_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:onClick="onClick"
+                    android:src="@drawable/btn_scoreboard" />
+
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/button_scoreboard"
+                    android:layout_width="@dimen/main_btns_width"
+                    android:layout_height="@dimen/main_btns_height"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_gallery"
+                    android:visibility="gone"/>
+
+
+                <ImageButton
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:id="@+id/button_achievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_achivement" />
+
+                <ImageButton
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:id="@+id/button_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_settings" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_weight="1.7">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ir.tapsell.tapselldevelopersdk.developer.TapsellMainImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_tapsel"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_small">
+        </ir.tapsell.tapselldevelopersdk.developer.TapsellMainImageButton>
+
+        <!--<ir.adad.client.Banner-->
+        <!--android:id="@+id/banner_ad_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_tapsell"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="tapsell"-->
+        <!--android:onClick="onClick"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+        <RelativeLayout
+            android:id="@+id/ch_ads"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ch_ads_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:adjustViewBounds="true"
+                android:src="@drawable/banner_default"/>
+
+            <ImageView
+                android:id="@+id/ch_close_ads"
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_xlarge"
+                android:layout_alignRight="@+id/ch_ads_img"
+                android:layout_alignTop="@+id/ch_ads_img"
+                android:src="@drawable/btn_close"
+                android:onClick="onClick"/>
+        </RelativeLayout>
+
+        <!--Rate_start_popup-->
+        <RelativeLayout
+            android:id="@+id/rate_start"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/frame_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame_banner"/>
+
+            <ImageView
+                android:id="@+id/close_rate_start"
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_xlarge"
+                android:layout_alignRight="@+id/frame_banner"
+                android:layout_alignTop="@+id/frame_banner"
+                android:src="@drawable/btn_close"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_button_width"
+                android:layout_alignTop="@+id/frame_banner"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:src="@drawable/rate_koja_rafigh"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_button_width"
+                android:layout_centerInParent="true"
+                android:src="@drawable/rate_doost_dashti"/>
+
+            <ImageView
+                android:id="@+id/btn_rate_yes"
+                android:layout_width="@dimen/header_button_width"
+                android:layout_height="@dimen/header_bar_height"
+                android:layout_alignBottom="@+id/frame_banner"
+                android:layout_alignLeft="@+id/frame_banner"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:src="@drawable/btn_rate_yes"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/btn_rate_no"
+                android:layout_width="@dimen/header_button_width"
+                android:layout_height="@dimen/header_bar_height"
+                android:layout_alignBottom="@+id/frame_banner"
+                android:layout_alignRight="@+id/frame_banner"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:src="@drawable/btn_rate_no"
+                android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+
+        <!--Rate_liked_popup-->
+        <RelativeLayout
+            android:id="@+id/rate_liked"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/frame_banner_liked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame_banner"/>
+
+            <ImageView
+                android:id="@+id/close_rate_liked"
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_xlarge"
+                android:layout_alignRight="@+id/frame_banner_liked"
+                android:layout_alignTop="@+id/frame_banner_liked"
+                android:src="@drawable/btn_close" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_button_width"
+                android:layout_alignTop="@+id/frame_banner_liked"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:src="@drawable/rate_che_khoob"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_button_width"
+                android:layout_centerInParent="true"
+                android:src="@drawable/rate_hemayat_kon"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                />
+
+
+            <ImageView
+                android:id="@+id/btn_rate_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_bar_height"
+                android:layout_alignBottom="@+id/frame_banner_liked"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:src="@drawable/btn_rate_ok"/>
+
+        </RelativeLayout>
+
+        <!--Rate_disliked_popup-->
+        <RelativeLayout
+            android:id="@+id/rate_disliked"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/frame_banner_disliked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame_banner"/>
+
+            <ImageView
+                android:id="@+id/close_rate_disliked"
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_xlarge"
+                android:layout_alignRight="@+id/frame_banner_disliked"
+                android:layout_alignTop="@+id/frame_banner_disliked"
+                android:src="@drawable/btn_close" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_button_lamp_width"
+                android:layout_alignTop="@+id/frame_banner_disliked"
+                android:src="@drawable/rate_ey_baba"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_button_width"
+                android:layout_alignTop="@+id/frame_banner_disliked"
+                android:layout_marginTop="@dimen/lamp_width"
+                android:src="@drawable/rate_chera_bade"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                />
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_alignBottom="@+id/frame_banner_disliked"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/lamp_height"
+                android:src="@drawable/frame_free_text"
+                android:onClick="onClick"/>-->
+
+            <com.chocolate.puzhle2.CustomViews.CEditText
+                android:id="@+id/txt_feedback"
+                android:layout_width="@dimen/letter_size_dw_width"
+                android:layout_height="@dimen/header_button_height"
+                android:text=""
+                android:textSize="@dimen/text_medium"
+                android:textColor="@android:color/white"
+                android:layout_alignBottom="@+id/frame_banner_disliked"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/lamp_height"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:background="@drawable/frame_textbox"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/btn_rate_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_bar_height"
+                android:layout_alignBottom="@+id/frame_banner_disliked"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:src="@drawable/btn_rate_send"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

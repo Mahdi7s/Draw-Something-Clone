@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/error" />
+    
+	<ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:padding="10dip"
+            android:text="@string/text_num_coin" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center"
+            android:src="@drawable/tapcoinicon1" />
+
+        <ir.tapsell.tapselldevelopersdk.styledview.StyledTextView
+            android:id="@+id/award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="20" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip"
+        android:layout_weight="1" />
+
+    <ir.tapsell.tapselldevelopersdk.styledview.StyledButton
+        android:id="@+id/doit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="4dip"
+        android:background="@drawable/button_open_orange"
+        android:text="@string/doit" />
+
+</LinearLayout>
