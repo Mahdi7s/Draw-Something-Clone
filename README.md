@@ -1,16 +1,14 @@
 Draw something clone is an excellent social drawing app that I developed using Android-Studio, Java, ParseServer, and Javascript.
 
 - You can create a guessing drawing photo with three given words (or your own words)
-- Different difficulty levels with increasing rewards
 - You can solve a random public puzzle or your selected friends
 
 ### Game features
 - Progressive leagues as you level up
 - Public share of your created puzzle for all players
-- Create a guessing drawing photo with three given words (or your own words)
 - Complete painting editor to draw
+- Different difficulty levels with increasing rewards
 - Player profile (name, link, score, solved and created puzzles)
-- Solve from a random public puzzle or your selected friends
 - Word guessing activity with shop and monetization dialog
 - Achievements activity
 
