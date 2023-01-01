@@ -7,7 +7,7 @@ Draw something clone is an excellent social drawing app that I developed using A
 ### Game features
 - Progressive leagues as you level up
 - Public share of your created puzzle for all players
-- Create a guessing drawing photo with three given words (or your own words) with different difficulty levels and reward
+- Create a guessing drawing photo with three given words (or your own words)
 - Complete painting editor to draw
 - Player profile (name, link, score, solved and created puzzles)
 - Solve from a random public puzzle or your selected friends
